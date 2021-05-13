@@ -10,15 +10,43 @@
   <body>
     <a-scene background="color: #333333">
       <a-box id="myBox"
-        width="4"
+        width="2"
         height="2"
-        depth="4"
+        depth="2"
         color="#0E86D4" 
         shadow
-        position="0 2 -5"
-        rotation="3 -1 1"
-        scale="-1 2 0">
+        position="3 2 -5"
+        rotation="5 -3 2"
+        scale="-1 2 1">
       </a-box>
+
+      <a-plane 
+      width="10" 
+      height="10" 
+      color="#7BC8A4"
+      position="0 0 -4" 
+      rotation="-90 0 0" ></a-plane>
+
+      <a-sky
+       color="#87ceeb"></a-sky>
+
+        <a-cylinder 
+        height="1.5" 
+        color="#FFC65D"
+        position="0.25 0.75 -3" 
+        radius="0.5"></a-cylinder>
+
+        <a-tetrahedron 
+        color="#FF284D" 
+        radius="2" 
+        position="-2 2 -4" 
+        rotation="0 45 0"></a-tetrahedron>
+
+        <a-dodecahedron 
+        color="#FF926B" 
+        radius="0.5" 
+        position="-1 0.75 -2" 
+        rotation="-90 0 0"></a-dodecahedron>
     </a-scene>
   </body>
 </html>
