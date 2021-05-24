@@ -45,7 +45,20 @@
         height="1" 
         depth="1" 
         material="src: #wood"
-        shadow>  
+        shadow
+        animation__mouseup="
+          property: components.material.material.color; 
+          type: color; 
+          to: pink; 
+          startEvents: mouseup; 
+          dur: 500;"
+        animation__mousedown="
+          property: components.material.material.color; 
+          type: color; 
+          to: green; 
+          startEvents: mousedown; 
+          dur: 500;"> 
+        >  
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
